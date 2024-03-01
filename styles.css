@@ -1,0 +1,69 @@
+/* Base styles (for all devices) */
+body {
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+header {
+    background: linear-gradient(to right, #02b033, #56d379);
+    color: white;
+    text-align: center;
+    padding: 0.2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 20px;
+}
+
+nav li {
+    margin: 0 20px; /* Reduced margin for mobile */
+}
+
+nav a img {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a img:hover {
+    transform: scale(1.1);
+}
+
+canvas {
+    border: 2px solid #fff;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    /* Adjust styles for mobile devices */
+    nav li {
+        margin: 0 10px; /* Further reduced margin for smaller screens */
+    }
+    /* Add any other mobile-specific styles here */
+}
+
+/* Additional media queries for tablets, etc. can be added as needed */
+
+/* Tetris container styles (for all devices) */
+#tetris-container {
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+#tetris {
+    border: 1px solid #000;
+    
+}
+
